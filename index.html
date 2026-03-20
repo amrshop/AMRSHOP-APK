@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AMR SHOP apk - App Download</title>
+
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinnEBZnXr0AfVy-6qwnm-Ngntrl2jdhHT4yWNhn7uC3wDHBPn6OezAC_k4XTEoHdmDaztHDj6-S5iF-RFU8-aZSlCocOQe-tbfm_BwlQEeFvIdQvK594hSXfGv_jk8Pk6HzixbMa95H03B9wPCiNnHDjQnIbzDf-JAnWJMYWrVfkDxxqSqJi0-GMhosrI/s32/46780.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinnEBZnXr0AfVy-6qwnm-Ngntrl2jdhHT4yWNhn7uC3wDHBPn6OezAC_k4XTEoHdmDaztHDj6-S5iF-RFU8-aZSlCocOQe-tbfm_BwlQEeFvIdQvK594hSXfGv_jk8Pk6HzixbMa95H03B9wPCiNnHDjQnIbzDf-JAnWJMYWrVfkDxxqSqJi0-GMhosrI/s180/46780.png">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: #f4f7fa;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .main-wrapper {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #ffffff;
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0 10px;
+        }
+        
+        .logo-container {
+            position: relative;
+            display: inline-block;
+            width: 110px;
+            height: 110px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .verified-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: #1d9bf0;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .shop-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: #004687;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #888;
+            text-transform: uppercase;
+            margin: 25px 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:active { transform: scale(0.97); }
+
+        .btn-call { background: linear-gradient(135deg, #007bff, #0056b3); color: white; }
+        .btn-whatsapp { background: #25d366; color: white; }
+        .btn-email { background: #ea4335; color: white; }
+        .btn-youtube { background: #ff0000; color: white; }
+        .btn-facebook { background: #1877f2; color: white; }
+        .btn-telegram { background: #0088cc; color: white; }
+        .btn-web { background: #673ab7; color: white; }
+        .btn-review { background: #f4b400; color: white; }
+        .btn-social { background: #333; color: white; }
+        .btn-download { background: linear-gradient(135deg, #34a853, #2e8b57); color: white; font-size: 17px; padding: 18px; }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+        .app-section {
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f9fa;
+            border-radius: 16px;
+            margin-bottom: 25px;
+        }
+        .app-icon {
+            width: 130px;
+            height: 130px;
+            border-radius: 22%;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .screenshot-gallery img {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinnEBZnXr0AfVy-6qwnm-Ngntrl2jdhHT4yWNhn7uC3wDHBPn6OezAC_k4XTEoHdmDaztHDj6-S5iF-RFU8-aZSlCocOQe-tbfm_BwlQEeFvIdQvK594hSXfGv_jk8Pk6HzixbMa95H03B9wPCiNnHDjQnIbzDf-JAnWJMYWrVfkDxxqSqJi0-GMhosrI/s512/46780.png" alt="AMR SHOP Logo" class="logo">
+            <div class="verified-badge">✓</div>
+        </div>
+        <div class="shop-name">AMR SHOP CHHATAK</div>
+    </div>
+
+    <div class="section-title">📱 Download Our App (APK Pure)</div>
+    <div class="app-section">
+        <img src="https://img.sanishtech.com/u/cc24f92e387b2aaf7e84ea27cc86daa9.png" alt="AMR SHOP App Icon" class="app-icon" id="appIcon">
+        <div class="app-title">AMR SHOP CHHATAK App</div>
+        <p style="color:#666; font-size:14px; margin-bottom:15px;">সবচেয়ে সহজে শপিং করুন • অর্ডার ট্র্যাক করুন • অফার পান</p>
+        <a href="https://apkpure.com/amr-shop/amr.play/download" class="btn btn-download" target="_blank">
+            📥 Download APK from APK Pure
+        </a>
+        <small style="color:#888; display:block; margin-top:8px;">Safe &amp; Secure • APK Pure Hosted</small>
+    </div>
+
+    <div class="section-title">📸 App Screenshots</div>
+    <div class="screenshot-gallery">
+        <img src="https://img.sanishtech.com/u/5c788183abc58f3553706df002ff3e6e.jpg" alt="Screenshot 1">
+        <img src="https://img.sanishtech.com/u/3186e61deff00a65f3be41bc9b75dd11.jpg">
+        <img src="https://img.sanishtech.com/u/8c2dfab5e2786229389d28016410412f.jpg">
+        <img src="https://img.sanishtech.com/u/79425005cc4b16091c54747316b8deed.jpg">
+        <img src="https://img.sanishtech.com/u/1e2606d0c9aa84b7a7223f0aaa694081.jpg">
+        <img src="https://img.sanishtech.com/u/a515b56a9191636d5483d0fa5b3ee9fa.jpg">
+        <img src="https://img.sanishtech.com/u/daebd977df6ab62677aaaf45b601856b.jpg">
+        <img src="https://img.sanishtech.com/u/cd83a61e82675c3c93bff08b84ad1e9c.png">
+        <img src="https://img.sanishtech.com/u/dbbcb9f83552c6e087ebb697d51f92b9.png">
+        <img src="https://img.sanishtech.com/u/e356f645ff26eaf7c9763995ce036dd0.png">
+        <img src="https://img.sanishtech.com/u/a6980923834cc4c6c4139abb38f950fd.png">
+        <img src="https://img.sanishtech.com/u/ca2246f5066573c3d02cfcbb4bfec9ab.png">
+        <img src="https://img.sanishtech.com/u/ca2246f5066573c3d02cfcbb4bfec9ab.png">
+        <img src="https://img.sanishtech.com/u/4e4882c7d5599e7c5c1c3efdec24c5cd.png">
+        <img src="https://img.sanishtech.com/u/fcddac8b94f7e3ad4ea29b5b18e691d1.png">
+    </div>
+
+    <!-- 🔥 এখানেই ভিডিও সেকশন আপডেট করা হয়েছে – এখন প্লে হবেই -->
+    <div class="section-title">🎥 অ্যাপের ভিডিও</div>
+    <div class="video-section">
+        <!-- ভিডিও ১ -->
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/tdS3l-bi5CE?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;fs=1" 
+                title="AMR SHOP অর্ডার গাইড" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!-- ভিডিও ২ (চাইলে ID পরিবর্তন করুন) -->
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/tdS3l-bi5CE?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;fs=1" 
+                title="AMR SHOP App Demo" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- বাকি সব কন্টাক্ট আগের মতোই -->
+    <div class="section-title">Emergency Contact</div>
+    <a href="tel:09658085019" class="btn btn-call">📞 Call Helpline: 09658085019</a>
+    
+    <div class="grid-2">
+        <a href="https://wa.me/8801727003670" class="btn btn-whatsapp">💬 WhatsApp 1</a>
+        <a href="https://wa.me/8801316487435" class="btn btn-whatsapp">💬 WhatsApp 2</a>
+    </div>
+
+    <div class="section-title">Email Support</div>
+    <a href="mailto:admin.amrshop@gmail.com" class="btn btn-email">📧 admin.amrshop@gmail.com</a>
+    <div class="grid-2">
+        <a href="mailto:support.amrshop@gmail.com" class="btn btn-email" style="font-size: 11px;">📧 support.amrshop</a>
+        <a href="mailto:amr.shopping.bd@gmail.com" class="btn btn-email" style="font-size: 11px;">📧 amr.shopping.bd</a>
+    </div>
+
+    <div class="section-title">YouTube Channels</div>
+    <div class="grid-2">
+        <a href="https://youtube.com/@amr_technology_nazrul" class="btn btn-youtube">📺 Tech Nazrul</a>
+        <a href="https://youtube.com/@amr_shop_chhatak" class="btn btn-youtube">📺 AMR Shop</a>
+    </div>
+
+    <div class="section-title">Social Media</div>
+    <a href="https://www.facebook.com/share/1DZq6hhoGi/" class="btn btn-facebook">📢 Facebook Page</a>
+    <a href="https://www.facebook.com/groups/2386994365148615/" class="btn btn-facebook" style="background: #3b5998;">👥 Facebook Group</a>
+    
+    <div class="grid-2">
+        <a href="https://tiktok.com/@amrshopchhatak" class="btn btn-social">🎵 TikTok</a>
+        <a href="https://www.instagram.com/amr_shop_chhatak" class="btn btn-social" style="background: #e1306c;">📸 Instagram</a>
+    </div>
+
+    <div class="section-title">Channels &amp; Review</div>
+    <a href="https://whatsapp.com/channel/0029VbCSaQ0IHphBtoRkBt0c" class="btn btn-whatsapp" style="background: #075e54;">💬 WhatsApp Channel</a>
+    
+    <div class="grid-2">
+        <a href="https://t.me/amrshopchhatak" class="btn btn-telegram">✈️ Shop Telegram</a>
+        <a href="https://t.me/amrtechnologynazrul" class="btn btn-telegram">✈️ Tech Telegram</a>
+    </div>
+
+    <div class="section-title">Official Website</div>
+    <a href="https://amrshopchhatak.blogspot.com" class="btn btn-web">🌐 Visit Blogger Site</a>
+    <a href="https://g.page/r/CYKLxsf9GvKoEBM/review" class="btn btn-review">🌟 Give Us a Google Review</a>
+
+    <div class="footer-text">© 2026 AMR SHOP CHHATAK | All Rights Reserved</div>
+</div>
+
+<script>
+    document.getElementById('appIcon').onerror = function() {
+        this.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinnEBZnXr0AfVy-6qwnm-Ngntrl2jdhHT4yWNhn7uC3wDHBPn6OezAC_k4XTEoHdmDaztHDj6-S5iF-RFU8-aZSlCocOQe-tbfm_BwlQEeFvIdQvK594hSXfGv_jk8Pk6HzixbMa95H03B9wPCiNnHDjQnIbzDf-JAnWJMYWrVfkDxxqSqJi0-GMhosrI/s512/46780.png';
+    };
+</script>
+
+</body>
+</html>
